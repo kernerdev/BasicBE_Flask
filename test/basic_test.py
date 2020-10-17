@@ -4,7 +4,6 @@ from src.main import app
 
 class BasicTestCase(unittest.TestCase):
 
-
     def test_basic(self):
         tester = app.test_client(self)
         response = tester.get('/hello', content_type='application/json')
